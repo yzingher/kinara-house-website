@@ -1,14 +1,13 @@
 import type { Metadata } from "next";
-import { Playfair_Display, DM_Sans } from "next/font/google";
+import { Cormorant_Garamond, DM_Sans } from "next/font/google";
 import "./globals.css";
 import CookieBanner from "@/components/CookieBanner";
-import Footer from "@/components/Footer";
 
-const playfairDisplay = Playfair_Display({
+const cormorantGaramond = Cormorant_Garamond({
   subsets: ["latin"],
-  variable: "--font-playfair",
+  variable: "--font-cormorant",
   display: "swap",
-  weight: ["400", "500", "600", "700"],
+  weight: ["300", "400", "500", "600", "700"],
   style: ["normal", "italic"],
 });
 
@@ -20,13 +19,13 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Kinara House — Curated Matchmaking for London's ENM Community",
+  title: "Kinara House — Bespoke Matchmaking for the ENM Community",
   description:
-    "Done swiping. Start meeting. Kinara House is a curated matchmaking service for London's ENM community. No algorithms. No swiping. Just thoughtful introductions.",
+    "A bespoke matchmaking house for the ENM community. We curate high-chemistry connections for adventurous couples and intentional singles who have outgrown the noise of the apps.",
   openGraph: {
-    title: "Kinara House — Curated Matchmaking for London's ENM Community",
+    title: "Kinara House — Bespoke Matchmaking for the ENM Community",
     description:
-      "Done swiping. Start meeting. Kinara House is a curated matchmaking service for London's ENM community.",
+      "A bespoke matchmaking house for the ENM community. We curate high-chemistry connections for adventurous couples and intentional singles.",
     type: "website",
   },
 };
@@ -37,10 +36,9 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en" className={`${playfairDisplay.variable} ${dmSans.variable}`}>
-      <body className="bg-[#1a1a1a] text-[#f5f0e8] antialiased">
+    <html lang="en" className={`${cormorantGaramond.variable} ${dmSans.variable}`}>
+      <body className="antialiased">
         <main>{children}</main>
-        <Footer />
         <CookieBanner />
       </body>
     </html>

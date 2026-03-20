@@ -9,15 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        gold: "#D4A853",
-        rose: "#C97B7B",
-        cream: "#f5f0e8",
-        dark: "#1a1a1a",
-        "dark-800": "#242424",
-        "dark-700": "#2e2e2e",
+        gold: "#C9A96E",
+        rose: "#A0656A",
+        cream: "#F0EAD6",
+        dark: "#0f0d0b",
       },
       fontFamily: {
-        playfair: ["var(--font-playfair)", "Georgia", "serif"],
+        cormorant: ["var(--font-cormorant)", "Georgia", "serif"],
         sans: ["var(--font-dm-sans)", "system-ui", "sans-serif"],
       },
     },
