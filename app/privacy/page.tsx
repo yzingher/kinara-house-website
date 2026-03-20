@@ -53,8 +53,7 @@ export default function PrivacyPage() {
             </a>
           </p>
           <p>
-            <strong className="text-[#f5f0e8]/80">Legal entity:</strong> [PLACEHOLDER — to be
-            updated on incorporation]
+            <strong className="text-[#f5f0e8]/80">Legal entity:</strong> Kinara House Ltd
           </p>
         </Section>
 
