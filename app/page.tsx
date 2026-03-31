@@ -29,8 +29,44 @@ const faqs = [
     a: "Apps are a numbers game; Kinara is a quality game. We remove the swipe and the ghosting. You aren't browsing a catalog; you are being introduced to a vetted peer by a human who has spoken to both of you.",
   },
   {
+    q: "What is ENM (Ethical Non-Monogamy)?",
+    a: "Ethical Non-Monogamy is an umbrella term for relationship styles where all parties openly and consensually engage in romantic or sexual connections with more than one person. It includes polyamory, open relationships, swinging, and other arrangements. The key word is ethical — everyone involved knows, consents, and communicates openly. ENM is not cheating; it is a deliberate, transparent way of building relationships.",
+  },
+  {
+    q: "Is it a blind date?",
+    a: "No. Before any introduction, we present you with profile snapshots of your potential matches — enough to get a sense of who they are, what they're looking for, and whether there's a foundation for chemistry. You always have the opportunity to review and approve before we move forward. We never put you in front of someone you haven't agreed to meet.",
+  },
+  {
+    q: "What if I see someone I know in the matches?",
+    a: "This isn't a blind process. We present you with a curated selection of profile snapshots for each round of matchmaking. If one of your matches happens to be someone you already know and you'd prefer not to be introduced, simply let us know and we'll replace them with another match. We always present multiple options — matchmaking is a process, not a single shot.",
+  },
+  {
+    q: "How does the matchmaking work?",
+    a: "After you're admitted, you complete a detailed curation survey covering your relationship style, desires, boundaries, and what you're truly looking for. Your dedicated matchmaker uses this to identify matches across three dimensions: structural alignment (relationship style), intellectual alignment (values and lifestyle), and erotic alignment (desires and boundaries). We then present you with a curated selection of profile snapshots to review before any introduction is made.",
+  },
+  {
+    q: "How many people will I be matched with?",
+    a: "We don't operate on volume. Each round, we present a small, carefully curated selection of matches — typically two to four profiles — so you can make a considered choice. Quality over quantity is the foundation of everything we do.",
+  },
+  {
+    q: "How can I be confident in your matchmaking?",
+    a: "Our matchmakers combine deep expertise in ENM dynamics with genuine human intuition. Every match is made by someone who has personally spoken to both parties, understands the nuances of non-traditional relationships, and is invested in creating connections that last. We don't rely on algorithms — we rely on understanding people.",
+  },
+  {
+    q: "Once I join, how long does the service last?",
+    a: "Your membership is ongoing. We continue to actively match and support you for as long as you're a member. There's no expiry date on finding the right connection.",
+  },
+  {
+    q: "When can I expect to be contacted after joining?",
+    a: "Once your curation survey is complete and your profile is built, your matchmaker will begin working on your first round of matches. You can typically expect to hear from us within a few weeks, depending on the specificity of what you're looking for. We'd rather take the time to get it right than rush a poor match.",
+  },
+  {
+    q: "Is my identity protected?",
+    a: "Absolutely. Your identity is never shared publicly or with other members without your explicit consent. We operate a closed-loop system — no browsing, no public profiles. You only become visible to someone when we've identified a mutual fit and both parties have agreed to the introduction.",
+  },
+  {
     q: "Does Kinara House have a physical location?",
-    a: "We are a House without Walls. We operate globally, hosting pop-up events and master-led workshops in high-end, discreet locations. Think of us as a private club that travels with its members.",
+    a: "We are a House without Walls. We operate globally, hosting pop-up events and master-led workshops in high-end, discreet locations. Think of us as a home that travels with its members.",
   },
   {
     q: "Do you help with Poly-cule building or finding a Third?",
@@ -46,11 +82,7 @@ const faqs = [
   },
   {
     q: "How do you handle the Tourist problem?",
-    a: "We reject roughly 60% of applicants. If we sense someone is just looking for a thrill without the emotional intelligence to handle the ENM landscape, we do not admit them. Our members pay for a tourist-free environment.",
-  },
-  {
-    q: "What if I see someone I know in the network?",
-    a: "You won't. There is no browsing. You only ever see the identity of someone we have specifically matched you with, and only after you have both expressed interest in the concept of each other.",
+    a: "If we sense someone is just looking for a thrill without the emotional intelligence to handle the ENM landscape, we do not admit them. Our vetting process is designed to filter for genuine intent, emotional maturity, and respect. Our members pay for a tourist-free environment.",
   },
   {
     q: "I'm in a couple, but my partner doesn't want to be involved in the matchmaking. Can I join alone?",
@@ -138,23 +170,22 @@ export default function Home() {
         {/* Hero content */}
         <div className="relative z-10 max-w-5xl">
           <p className="text-[#C9A96E]/80 tracking-[0.35em] text-[11px] uppercase mb-10 font-medium">
-            Private Members — Est. London
+            Bespoke Matchmaking — Est. London
           </p>
           <h1
             className="font-cormorant font-light leading-[0.9] text-[#F0EAD6] mb-12"
             style={{ fontSize: "clamp(3.2rem, 8.5vw, 7rem)" }}
           >
-            The Architecture<br />
-            <em className="italic" style={{ color: "#D4BC88" }}>of Modern</em><br />
+            <em className="italic" style={{ color: "#D4BC88" }}>Modern</em><br />
             Intimacy.
           </h1>
           <p
             className="text-[#F0EAD6]/55 leading-relaxed mb-14 max-w-xl"
             style={{ fontSize: "clamp(1rem, 1.4vw, 1.15rem)" }}
           >
-            A bespoke matchmaking house for the ENM community. We curate high-chemistry
+            A bespoke matchmaking home for the ENM community. We curate high-chemistry
             connections for adventurous couples and intentional singles who have outgrown
-            the noise of the apps.
+            the noise of the apps and traditional relationships.
           </p>
           <a
             href={TYPEFORM_URL}
@@ -187,18 +218,6 @@ export default function Home() {
           <div className="reveal reveal-delay-1">
             <p
               className="font-cormorant font-light text-[#F0EAD6] leading-[1.35]"
-              style={{ fontSize: "clamp(1.5rem, 2.8vw, 2.4rem)" }}
-            >
-              Kinara House is not a place; it is a standard. We serve those who live with taste,
-              confidence, and a clear understanding of their own desire. Whether you are a couple
-              seeking to expand your circle or a single person dedicated to the ENM path, we
-              provide the vetting, the atmosphere, and the introductions that traditional dating
-              platforms cannot.
-            </p>
-          </div>
-          <div className="reveal reveal-delay-2">
-            <p
-              className="font-cormorant font-light text-[#F0EAD6]/60 leading-[1.35] mt-10"
               style={{ fontSize: "clamp(1.5rem, 2.8vw, 2.4rem)" }}
             >
               In our world, desire is paired with elegance. We bridge the gap between
@@ -238,7 +257,7 @@ export default function Home() {
               </h3>
               <p className="text-[#F0EAD6]/55 leading-relaxed">
                 We don&rsquo;t use algorithms; we use intuition and rigorous human vetting.
-                Every member is hand-selected.
+                Every member is selected because they are the right fit for Kinara House.
               </p>
             </div>
 
@@ -351,8 +370,8 @@ export default function Home() {
             </div>
             <div className="self-center">
               <p className="text-[#F0EAD6]/60 leading-relaxed text-base lg:text-[1.05rem] mb-7">
-                Once admitted, your matchmaker begins scanning the house. We don&rsquo;t look for
-                likes; we look for Triple Alignment:
+                Once admitted, you complete a detailed curation survey that goes far beyond
+                surface preferences. Your matchmaker uses your responses to identify Triple Alignment:
               </p>
               <ul className="space-y-4">
                 <li className="flex gap-4 text-[#F0EAD6]/60 text-base lg:text-[1.05rem]">
